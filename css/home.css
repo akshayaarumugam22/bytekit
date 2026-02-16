@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #001E6C, #035397);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensures everything fits within the screen */
+}
+
+/* Header */
+header {
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: absolute;
+    top: 10px;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFAA4C;
+    letter-spacing: 1.5px;
+}
+
+/* User Info */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-info i {
+    font-size: 18px;
+}
+
+.logout-btn {
+    background: #FFAA4C;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logout-btn:hover {
+    background: #e69538;
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    margin-top: 80px;
+    width: 100%;
+}
+
+/* Title */
+h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+/* Tool Options */
+.tool-options {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.tool-card {
+    background: white;
+    color: #001E6C;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    background-color: #FFAA4C;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.tool-card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #035397;
+}
+

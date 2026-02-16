@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYTEKIT - Home</title>
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://kit.fontawesome.com/a529d2affe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">BYTEKIT</div>
+        <div class="user-info">
+            <i class="fas fa-user"></i>
+            <span id="user-email">Loading...</span>
+            <button onclick="logout()" class="logout-btn">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <h1>Powerful Tools at Your Fingertips</h1>
+        <p class="sub-text">Simplify your workflow with our easy-to-use utilities</p>
+
+        <div class="tool-options">
+            <div class="tool-card" onclick="redirectTo('url.html')">
+                <i class="fas fa-link"></i>
+                <h3>URL Shortener</h3>
+                <p>Shorten Your Links</p>
+            </div>
+
+            <div class="tool-card" onclick="redirectTo('qr.html')">
+                <i class="fas fa-qrcode"></i>
+                <h3>QR Code Generator</h3>
+                <p>Create QR Codes</p>
+            </div>
+
+            <div class="tool-card" onclick="redirectTo('analytics.html')">
+                <i class="fas fa-chart-line"></i>
+                <h3>Analytics</h3>
+                <p>View Your Dashboard</p>
+            </div>
+        </div>
+    </main>
+
+  
+
+    <script type="module" src="js/home.js"></script>
+</body>
+</html>
